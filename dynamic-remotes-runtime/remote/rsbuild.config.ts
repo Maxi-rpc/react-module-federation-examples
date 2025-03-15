@@ -9,16 +9,13 @@ export default defineConfig({
   server: {
     port: 3001,
   },
-  source: {
-    tsconfigPath: './tsconfig.json',
-  },
   plugins: [
     pluginReact(),
     pluginModuleFederation({
       name: 'remote',
       filename: 'remoteEntry.js',
       exposes: {
-        './Table': './src/components/ui/Table',
+        './Button': './src/components/ui/Button',
       },
       shared: {
         ...deps,

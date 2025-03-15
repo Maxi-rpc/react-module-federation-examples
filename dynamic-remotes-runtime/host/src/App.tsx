@@ -4,14 +4,10 @@ import Main from './Main';
 import useFetchJson from './hooks/useFetchJson';
 
 const App = () => {
-  const { data, loading } = useFetchJson(`${__webpack_public_path__}`);
-
-  return loading ? (
-    'Loading...'
-  ) : (
+  return (
     <>
       <MainLayout>
-        <Main data={data} />
+        <Main />
       </MainLayout>
     </>
   );
