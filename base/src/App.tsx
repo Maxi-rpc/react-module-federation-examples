@@ -6,7 +6,9 @@ const App = () => {
   return (
     <>
       <MainLayout>
-        <h1>Remote</h1>
+        <div className="p-3">
+          <h1 className="text-base">Remote - component</h1>
+        </div>
         <Button />
       </MainLayout>
     </>
